@@ -1,0 +1,7 @@
+export const SET_TODO_DOCS = "SET_TODO_DOCS";
+export const ADD_TODO_DOC = "ADD_TODO_DOC";
+export const UPDATE_TODO_DOC = "UPDATE_TODO_DOC";
+export const UPDATE_TODO_DOC_STATUS = "UPDATE_TODO_DOC_STATUS";
+export const REMOVE_TODO_DOC = "REMOVE_TODO_DOC";
+export const SET_TODO_DOC = "SET_TODO_DOC";
+export const SET_OPEN_FORM_DIALOG = "SET_OPEN_FORM_DIALOG";
