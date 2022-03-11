@@ -1,6 +1,4 @@
 import React from "react";
-
-// components
 import TodoColumn from "../components/todo-column";
 
 const Body = () => {

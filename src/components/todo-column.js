@@ -1,11 +1,7 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import { useSelector } from "react-redux";
-
-// componets
 import TodoCard from "./todo-card";
 import AddTodoButton from "./add-todo-button";
-
-// helpers
 import updateTodoLists from "../helpers/update-todo-lists";
 import FormDialog from "./form-dialog";
 

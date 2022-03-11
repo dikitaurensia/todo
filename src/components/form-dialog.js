@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useFormik } from "formik";
 import * as yup from "yup";
-
-// reactstrap
 import {
   Modal,
   ModalHeader,
@@ -15,16 +13,12 @@ import {
   Label,
   Input,
 } from "reactstrap";
-
-// actions
 import {
   addTodoDoc,
   setOpenFormDialog,
   setTodoDoc,
   updateTodoDoc,
 } from "../store/action/todo";
-
-// helpers
 import generateRandomString from "../helpers/generate-random-string";
 import generateCreatedAt from "../helpers/generate-created-at";
 
@@ -46,7 +40,6 @@ const FormDialog = ({ title, open }) => {
     validationSchema,
     onSubmit: (values) => {
       if (Boolean(todoDoc)) {
-        // UPDATE TODO
         const data = {
           id: todoDoc.id,
           title: values.title,
@@ -55,7 +48,6 @@ const FormDialog = ({ title, open }) => {
 
         dispatch(updateTodoDoc(data));
       } else {
-        // ADD TODO
         const data = {
           id: generateRandomString(5),
           title: values.title,
@@ -94,7 +86,7 @@ const FormDialog = ({ title, open }) => {
             <Label for="title">Title</Label>
             <Input
               id="title"
-              placeholder="ex: make a drink"
+              placeholder="ex: play game"
               onChange={formik.handleChange}
               value={formik.values.title}
               invalid={formik.touched.title && Boolean(formik.errors.title)}
@@ -109,7 +101,7 @@ const FormDialog = ({ title, open }) => {
               id="description"
               name="description"
               type="textarea"
-              placeholder="ex: make a drink for happiness"
+              placeholder="ex: play game dota for happiness"
               onChange={formik.handleChange}
               value={formik.values.description}
               invalid={

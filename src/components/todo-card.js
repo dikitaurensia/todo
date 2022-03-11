@@ -1,6 +1,4 @@
 import React from "react";
-
-// components
 import TodoCardAction from "./todo-card-action";
 
 const TodoCard = ({ data }) => {
@@ -10,7 +8,6 @@ const TodoCard = ({ data }) => {
     <div className="card my-2">
       <div className="card-body text-start d-flex justify-content-between align-items-center">
         <div>
-          {/* title */}
           <p
             className={
               status === 1
@@ -20,11 +17,7 @@ const TodoCard = ({ data }) => {
           >
             {title}
           </p>
-
-          {/* description */}
           <p className="fw-light m-0">{description}</p>
-
-          {/* createdAt */}
           <div className="mt-2">
             <small className="text-black-50">
               <strong>createdAt:</strong> {createdAt}

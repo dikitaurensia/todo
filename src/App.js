@@ -1,12 +1,8 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import "./App.css";
-
-// containers
 import Body from "./containers/body";
 import Header from "./containers/header";
-
-// actions
 import { loadTodoDocs } from "./store/action/todo";
 
 const App = () => {

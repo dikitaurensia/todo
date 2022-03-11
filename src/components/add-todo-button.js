@@ -1,7 +1,5 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-
-// actions
 import { setOpenFormDialog } from "../store/action/todo";
 
 const AddTodoButton = () => {

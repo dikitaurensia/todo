@@ -1,4 +1,3 @@
-// action types
 import {
   SET_TODO_DOCS,
   ADD_TODO_DOC,
@@ -8,8 +7,6 @@ import {
   SET_TODO_DOC,
   SET_OPEN_FORM_DIALOG,
 } from "../../constants/action-types";
-
-// helpers
 import updateObject from "../../helpers/update-object";
 
 const initialState = {

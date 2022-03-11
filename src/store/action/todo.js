@@ -1,6 +1,5 @@
 import axios from "axios";
 
-// action types
 import {
   SET_TODO_DOCS,
   ADD_TODO_DOC,

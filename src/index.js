@@ -2,12 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
-// react-redux
 import { Provider } from "react-redux";
 import store from "./store";
-
-// bootstrap and css
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
